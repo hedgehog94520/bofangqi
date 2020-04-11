@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Han Music PLayer</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+
+<section class="container">
+
+    <audio id="id-audio-player" src="audio/1.mp3"></audio>
+
+    <div class="song-list" data-song="3" data-play="0">
+        <div class="class-song han-play" id="id-Song-0" data-path="audio/1.mp3"></div>
+        <div class="class-song" id="id-Song-1" data-path="audio/2.mp3"></div>
+        <div class="class-song" id="id-Song-2" data-path="audio/3.mp3"></div>
+    </div>
+
+    <div class="song-name" data-song="3" data-play="0">
+        <div class="names han-play" id="id-name-0" data-name="魔法密林"></div>
+        <div class="names" id="id-name-1" data-name="天空之城"></div>
+        <div class="names" id="id-name-2" data-name="射手村"></div>
+    </div>
+
+    <div class="gua-slide han-hide" data-picture="3" data-play="0">
+        <img class="pictures han-active" id="id-picture-0" data-src="魔法密林.jpg" alt="魔法密林">
+        <img class="pictures" id="id-picture-1" data-src="天空之城.jpg" alt="天空之城">
+        <img class="pictures" id="id-picture-2" data-src="射手村.jpg" alt="射手村">
+    </div>
+
+    <div id="player">
+
+        <div class="caratula">
+            <img id="id-audio-playerPicture" src="魔法密林.jpg">
+            <div class="more">
+                <div class="icon-info"></div>
+            </div>
+            <div class="bio">
+                <h2>han</h2>
+                <p>贼鸡巴牛逼的播放器，啥玩意没有还是抄的</p>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="outer">
+                <div class="inner">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="love">
+                <div class="icon-heart"></div>
+                <div class="icon-star-empty"></div>
+            </div>
+            <div class="elapsed">
+                <span>时间：</span>
+                <span id="id-time-now"></span>
+                <span>/</span>
+                <span id="id-time-whole"></span>
+            </div>
+            <h2>
+                <span id="id-song-name">魔法密林</span>
+            </h2>
+            <h3>冒险岛纯音乐</h3>
+        </div>
+
+        <div class="controls">
+            <ul>
+                <li><div class="icon-backward btn"></div></li>
+                <li><div class="icon-pause btn"></div></li>
+                <li class="play"><div class="icon-play btn"></div></li>
+                <li><div class="icon-stop btn"></div></li>
+                <li><div class="icon-forward btn"></div></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="player.js"></script>
+</section>
+
+
+</body>
+</html>
